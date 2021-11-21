@@ -27,8 +27,8 @@ cd svelte_cards
 - Webpack
 
 ### Setup
-- run `npm install` to install all required node modules
-- if you vant to see live version on your local machine run `npm run build` and open live server
+- run `npm start` to install all required node modules
+- if you vant to see live version on your local machine run `npm run dev` and open live server `localhost:5000`
 
 ### Live Version
 
