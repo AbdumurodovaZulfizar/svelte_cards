@@ -1,6 +1,7 @@
 <script>
 	import Prev from "./Prev.svelte";
 	import Card from "./Card.svelte";
+	import Next from "./Next.svelte";
 	import "tailwindcss/tailwind.css";
 	let name = "Zulfizar Abdumurodova";
 	let arr = [1,2,3,4,5];
@@ -13,11 +14,14 @@
 	</div>
 	<div class="flex">
 		<svelte:component this={Prev} />
-		<div class="overflow-x-hidden slide_wrapper flex">
-			{#each arr as item}
-    <svelte:component this={Card} id={item} />
-  	{/each}
+		<div class="overflow-x-hidden slide_wrapper">
+			<div class="flex wrapper">
+				{#each arr as item}
+    		<Card id={item} />
+  			{/each}
+			</div>
 		</div>
+		<svelte:component this={Next} />
 	</div>
 </main>
 
