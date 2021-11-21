@@ -28,6 +28,6 @@
 })
 </script>
 
-<div class="self-center text-5xl px-3" id="next">
+<div class="self-center text-5xl px-3" id="next" role="button">
   <i class="fas fa-chevron-right"></i>
 </div>
