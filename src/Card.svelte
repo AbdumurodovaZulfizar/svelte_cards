@@ -1,7 +1,33 @@
 <script>
 	let name = "Zulfizar Abdumurodova";
+  import Image from "./restaurant.jpg";
 </script>
 
-<main>
-  <h1>{name}</h1>
-</main>
+<div class="shadow-md rounded-md mx-3 my-2 my_card transition ease-out duration-700 transform hover:scale-105">
+  <div class="flex justify-between bg-gray-100 rounded-t-md">
+    <div class="flex">
+      <Image src={Image} alt="image" class="w-24 p-3">
+      <div class="py-3 flex flex-col justify-between">
+        <p class="text-xl text-gray-800 font-semibold">Project name</p>
+        <p class="text-base text-gray-600 font-semibold"><i class="fas fa-check-square text-black"></i><span class="px-3">Company name</span></p>
+      </div>
+    </div>
+    <div class="flex flex-col justify-between p-3 place-items-end">
+      <i class="far fa-bookmark"></i>
+      <p>5 hours ago</p>
+    </div>
+  </div>
+  <div>
+    <div class="p-3">
+      <p class="leading-8"><i class="fas fa-clock"></i><span class="px-2 text-gray-600">10hr/per week</span></p>
+      <p class="leading-8"><i class="fas fa-medal"></i><span class="px-2 text-gray-600">Certificate/Recommendation Letter</span></p>
+      <p class="leading-8"><i class="fas fa-map-marker-alt"></i><span class="px-2 text-gray-600">Remote</span></p>
+      <div class="flex flex-wrap pt-3">
+        <div class="px-2 bg-gray-200 mr-3 my-1 rounded-md">Front-end Engineer</div>
+        <div class="px-2 bg-gray-200 mr-3 my-1 rounded-md">Backend Engineer</div>
+        <div class="px-2 bg-gray-200 mr-3 my-1 rounded-md">UX/UI Designer</div>
+        <div class="px-2 bg-gray-200 my-1 rounded-md">QA Tester</div>
+      </div>
+    </div>
+  </div>
+</div>
