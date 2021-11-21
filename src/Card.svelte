@@ -4,10 +4,10 @@
         wrapper = document.querySelector(".slide_wrapper"),
         inner_wrapper = document.querySelector(".wrapper"),
         width = getComputedStyle(wrapper).width;
-        inner_wrapper.style.width = 100*(slides.length)/3.5 + '%';
+        inner_wrapper.style.width = 100*(slides.length)/3 + '%';
         inner_wrapper.style.transition = '0.5s ease';
     slides.forEach(slide => {
-    slide.style.width = width/3.5;
+    slide.style.width = width/3;
     })
   })
 </script>
@@ -15,7 +15,7 @@
 <div class="shadow-md rounded-md mx-3 my-2 my_card transition ease-out duration-700 transform hover:scale-105">
   <div class="flex justify-between bg-gray-100 rounded-t-md">
     <div class="flex">
-      <img src="./restaurant.jpg" alt="image" class="w-24 p-3" />
+      <img class="w-24 p-3" src="https://blog.hubspot.com/hs-fs/hubfs/landing-page-template-architecture.jpg?width=450&name=landing-page-template-architecture.jpg" alt="" /> 
       <div class="py-3 flex flex-col justify-between">
         <p class="text-xl text-gray-800 font-semibold">Project name</p>
         <p class="text-base text-gray-600 font-semibold"><i class="fas fa-check-square text-black"></i><span class="px-3">Company name</span></p>
